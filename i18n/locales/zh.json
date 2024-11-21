@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "pricing": "定价",
+    "changelog": "更新日志",
+    "docs": "文档",
+    "dashboard": "控制台"
+  },
+  "header": {
+    "welcome": "欢迎 orbital16!",
+    "subtitle": "查看您出色业务的最新统计数据。"
+  },
+  "stats": {
+    "newClients": "新增客户",
+    "revenue": "收入",
+    "projects": "项目",
+    "tasks": "任务"
+  },
+  "hero": {
+    "newFeature": "新功能：令人惊叹的 SaaS 功能",
+    "heading": "您的革命性 Nuxt 3 SaaS",
+    "description": "这是一个使用 supastarter 构建的演示应用程序。 它将为您节省大量时间和精力来构建您的下一个 SaaS。",
+    "getStarted": "立即开始 →",
+    "documentation": "文档"
+  },
+  "featureA": {
+    "title": "功能dify的Saas平台",
+    "description": "他有以下功能特点",
+    "learnMore": "了解更多 →",
+    "benefit1": {
+      "title": "充值简单",
+      "description": "集成- ZPay支付。"
+    },
+    "benefit2": {
+      "title": "面向C端用户",
+      "description": "拥有了面向c端用户的功能。"
+    }
+  },
+  "subscribe": {
+    "title": "抢先体验",
+    "description": "成为第一批访问 supastarter.nuxt 的人。",
+    "placeholder": "邮箱",
+    "button": "订阅"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "navigation": {
+    "pricing": "Pricing",
+    "changelog": "Changelog",
+    "docs": "Docs",
+    "dashboard": "Dashboard"
+  },
+  "header": {
+    "welcome": "Welcome orbital16!",
+    "subtitle": "See the latest stats of your awesome business."
+  },
+  "stats": {
+    "newClients": "New clients",
+    "revenue": "Revenue",
+    "churn": "Churn",
+    "increase": "+12%",
+    "increaseRevenue": "+60%",
+    "decreaseChurn": "-30%",
+    "projects": "Projects",
+    "tasks": "Tasks"
+  },
+  "hero": {
+    "newFeature": "New: Amazing feature of your SaaS",
+    "heading": "Your revolutionary Nuxt 3 SaaS",
+    "description": "This is a demo application built with supastarter. It will save you a lot of time and effort building your next SaaS.",
+    "getStarted": "Get started →",
+    "documentation": "Documentation"
+  },
+  "featureA": {
+    "title": "Dify SaaS Platform",
+    "description": "It offers the following features:",
+    "learnMore": "Learn more →",
+    "benefit1": {
+      "title": "Simple Recharge",
+      "description": "Integrated with ZPay payment."
+    },
+    "benefit2": {
+      "title": "For C-End Users",
+      "description": "Equipped with features tailored for C-end users."
+    }
+  },
+  "subscribe": {
+    "title": "Get early access",
+    "description": "Be among the first to get access to supastarter.nuxt.",
+    "placeholder": "Email",
+    "button": "Subscribe"
+  }
+}

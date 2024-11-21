@@ -12,8 +12,11 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "^9.0.0-rc.2",
+    "better-sqlite3": "^11.5.0",
     "nitropack": "^2.10.4",
     "nuxt": "^3.14.159",
+    "sqlite": "^5.1.1",
     "vue": "latest",
     "vue-router": "latest"
   },
