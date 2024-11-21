@@ -26,5 +26,6 @@ export default defineNuxtConfig({
   },
   nitro: {
   },
+  plugins: ['~/plugins/google-analytics.js'], // 确保路径正确
 
 })

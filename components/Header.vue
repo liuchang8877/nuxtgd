@@ -14,40 +14,22 @@
       <!-- 添加语言切换按钮 -->
       <div class="relative">
         <!-- 当前语言按钮 -->
-        <button
-          @click="toggleDropdown"
-          class="px-4 py-2 border rounded-lg bg-gray-50 hover:bg-gray-100 flex items-center space-x-2"
-        >
+        <button @click="toggleDropdown"
+          class="px-4 py-2 border rounded-lg bg-gray-50 hover:bg-gray-100 flex items-center space-x-2">
           {{ getLocaleName(locale) }}
           <span class="text-gray-600">{{ getLocaleName(currentLocale.value) }}</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-5 h-5 text-gray-400"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 9l-7.5 7.5L4.5 9"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-5 h-5 text-gray-400">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
           </svg>
         </button>
 
         <!-- 语言选择下拉菜单 -->
-        <div
-          v-if="dropdownOpen"
+        <div v-if="dropdownOpen"
           class="absolute right-0 mt-2 bg-white border rounded-lg shadow-md transition-opacity duration-200 z-10"
-          :class="{ 'opacity-0': !dropdownOpen, 'opacity-100': dropdownOpen }"
-        >
-          <button
-            v-for="locale in availableLocales"
-            :key="locale"
-            @click="switchLocale(locale)"
-            class="block px-4 py-2 hover:bg-gray-100 w-full text-left flex items-center space-x-2"
-          >
+          :class="{ 'opacity-0': !dropdownOpen, 'opacity-100': dropdownOpen }">
+          <button v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"
+            class="block px-4 py-2 hover:bg-gray-100 w-full text-left flex items-center space-x-2">
             <span>{{ getLocaleName(locale) }}</span>
           </button>
         </div>
