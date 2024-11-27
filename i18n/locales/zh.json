@@ -3,7 +3,7 @@
     "pricing": "定价",
     "changelog": "更新日志",
     "docs": "文档",
-    "dashboard": "控制台"
+    "login": "登录"
   },
   "header": {
     "welcome": "欢迎 orbital16!",
@@ -40,5 +40,46 @@
     "description": "成为第一批访问 supastarter.nuxt 的人。",
     "placeholder": "邮箱",
     "button": "订阅"
+  },
+  "login": {
+    "title": "登录您的账户",
+    "description": "欢迎回来！请输入您的详细信息。",
+    "email": "邮箱",
+    "password": "密码",
+    "remember_me": "记住我",
+    "forgot_password": "忘记密码？",
+    "sign_in": "登录",
+    "error": {
+      "invalid_credentials": "邮箱或密码无效",
+      "network_error": "网络错误，请重试。"
+    },
+    "success": "登录成功！正在跳转..."
+  },
+  "dashboard": {
+    "title": "orbital16",
+    "welcome": "欢迎回来，{name}！",
+    "welcome_message": "这是您今天的账户动态。",
+    "logout": "退出登录",
+    "logout_success": "您已成功退出登录",
+    "recent_activity": "最近活动",
+    "activity_description": "您的最近活动及其状态列表",
+    "stats": {
+      "total_views": "总浏览量",
+      "total_likes": "总点赞数",
+      "total_comments": "总评论数"
+    },
+    "activity": {
+      "login": "系统登录",
+      "login_description": "成功登录系统",
+      "profile_update": "个人资料更新",
+      "profile_update_description": "更新了用户个人资料",
+      "settings": "设置变更",
+      "settings_description": "修改了系统设置"
+    },
+    "status": {
+      "success": "成功",
+      "completed": "已完成",
+      "in_progress": "进行中"
+    }
   }
 }

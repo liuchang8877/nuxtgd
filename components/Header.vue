@@ -6,10 +6,10 @@
     <nav class="flex items-center space-x-6">
       <!-- <a href="/pricing" class="text-gray-600 hover:text-gray-800">{{ $t('nav.pricing') }}</a>
       <a href="/changelog" class="text-gray-600 hover:text-gray-800">{{ $t('nav.changelog') }}</a>
-      <a href="/documentation" class="text-gray-600 hover:text-gray-800">{{ $t('nav.docs') }}</a>
-      <button class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-900">
-        {{ $t('nav.dashboard') }}
-      </button> -->
+      <a href="/documentation" class="text-gray-600 hover:text-gray-800">{{ $t('nav.docs') }}</a> -->
+      <button @click="navigateToLogin" class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-900">
+        {{ $t('navigation.login') }}
+      </button>
 
       <!-- 添加语言切换按钮 -->
       <div class="relative">
@@ -41,11 +41,18 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const { locale, availableLocales } = useI18n() // 动态获取语言列表和当前语言
 
 // 管理下拉菜单状态
 const dropdownOpen = ref(false)
+
+// 导航到登录页面
+const navigateToLogin = () => {
+  router.push('/login')
+}
 
 // 切换语言逻辑
 const currentLocale = locale

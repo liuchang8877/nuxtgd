@@ -12,13 +12,16 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.2.0",
     "@nuxtjs/i18n": "^9.0.0-rc.2",
+    "@nuxtjs/tailwindcss": "^6.12.2",
     "better-sqlite3": "^11.5.0",
     "nitropack": "^2.10.4",
     "nuxt": "^3.14.159",
     "sqlite": "^5.1.1",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue-toastification": "^2.0.0-rc.5"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",

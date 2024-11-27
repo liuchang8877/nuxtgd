@@ -2,12 +2,12 @@
   "navigation": {
     "pricing": "Pricing",
     "changelog": "Changelog",
-    "docs": "Docs",
-    "dashboard": "Dashboard"
+    "docs": "Documentation",
+    "login": "Login"
   },
   "header": {
     "welcome": "Welcome orbital16!",
-    "subtitle": "See the latest stats of your awesome business."
+    "subtitle": "Check out the latest statistics for your excellent business."
   },
   "stats": {
     "newClients": "New clients",
@@ -39,10 +39,51 @@
       "description": "Equipped with features tailored for C-end users."
     }
   },
+  "login": {
+    "title": "Sign in to your account",
+    "description": "Welcome back! Please enter your details.",
+    "email": "Email",
+    "password": "Password",
+    "remember_me": "Remember me",
+    "forgot_password": "Forgot password?",
+    "sign_in": "Sign in",
+    "error": {
+      "invalid_credentials": "Invalid email or password",
+      "network_error": "Network error. Please try again."
+    },
+    "success": "Login successful! Redirecting..."
+  },
   "subscribe": {
     "title": "Get early access",
     "description": "Be among the first to get access to supastarter.nuxt.",
     "placeholder": "Email",
     "button": "Subscribe"
+  },
+  "dashboard": {
+    "title": "orbital16",
+    "welcome": "Welcome back, {name}!",
+    "welcome_message": "Here's what's happening with your account today.",
+    "logout": "Sign out",
+    "logout_success": "You have been successfully logged out",
+    "recent_activity": "Recent Activity",
+    "activity_description": "A list of your recent activities and their status",
+    "stats": {
+      "total_views": "Total Views",
+      "total_likes": "Total Likes",
+      "total_comments": "Total Comments"
+    },
+    "activity": {
+      "login": "System Login",
+      "login_description": "Successfully logged into the system",
+      "profile_update": "Profile Update",
+      "profile_update_description": "Updated user profile information",
+      "settings": "Settings Change",
+      "settings_description": "Modified system settings"
+    },
+    "status": {
+      "success": "Success",
+      "completed": "Completed",
+      "in_progress": "In Progress"
+    }
   }
 }
