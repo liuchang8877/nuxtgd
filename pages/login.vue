@@ -82,13 +82,11 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
 import { useToast } from 'vue-toastification'
+import { navigateTo } from '#app'
 import Header from '~/components/Header.vue'
 
-const router = useRouter()
 const toast = useToast()
-const { t } = useI18n()
 const email = ref('')
 const password = ref('')
 const rememberMe = ref(false)
@@ -106,38 +104,44 @@ const handleLogin = async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Accept': '*/*',
       },
       body: JSON.stringify({
         email: email.value,
         password: password.value,
-      }),
+      })
     })
 
-    const data = await response.json()
+    const result = await response.json()
 
-    if (!response.ok) {
-      error.value = t('login.error.invalid_credentials')
-      toast.error(t('login.error.invalid_credentials'), {
+    if (!response.ok || result.code !== 0) {
+      error.value = 'Invalid credentials'
+      toast.error('Invalid credentials', {
         timeout: 3000
       })
       return
     }
 
-    success.value = t('login.success')
-    toast.success(t('login.success'), {
+    // Store token and user data
+    const userData = result.data
+    localStorage.setItem('token', userData.token)
+    localStorage.setItem('user', JSON.stringify({
+      id: userData.id,
+      email: userData.email,
+      name: userData.name,
+      avatar: userData.avatar,
+      status: userData.status
+    }))
+
+    toast.success('Login successful', {
       timeout: 2000
     })
     
-    // Store user data in localStorage or state management system
-    localStorage.setItem('user', JSON.stringify(data.user))
-    
-    // Redirect to dashboard after successful login
-    setTimeout(() => {
-      router.push('/dashboard')
-    }, 1000)
+    // Redirect to dashboard
+    await navigateTo('/dashboard')
   } catch (err) {
-    error.value = t('login.error.network_error')
-    toast.error(t('login.error.network_error'), {
+    error.value = 'Network error'
+    toast.error('Network error', {
       timeout: 3000
     })
     console.error('Login error:', err)

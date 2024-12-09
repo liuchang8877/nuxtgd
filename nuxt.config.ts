@@ -24,6 +24,11 @@ export default defineNuxtConfig({
     'vue-toastification/dist/index.css',
     '@/assets/css/tailwind.css'
   ],
+  routeRules: {
+    '/api/**': {
+      proxy: 'http://127.0.0.1:5123/api/**'
+    }
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -32,18 +37,12 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBase: 'http://127.0.0.1:5123'
+      apiBase: 'http://127.0.0.1:5123',
+      baseURL: 'http://localhost', //对应dify端口
     }
   },
   nitro: {
-    devProxy: {
-      '/api': {
-        target: 'http://127.0.0.1:5123/api',
-        changeOrigin: true,
-        prependPath: true
-      }
-    }
   },
   plugins: ['~/plugins/google-analytics.js'], // 确保路径正确
-
+  
 })

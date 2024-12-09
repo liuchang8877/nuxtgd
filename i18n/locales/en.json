@@ -10,9 +10,9 @@
     "subtitle": "Check out the latest statistics for your excellent business."
   },
   "stats": {
-    "newClients": "New clients",
+    "newClients": "344",
     "revenue": "Revenue",
-    "churn": "Churn",
+    "churn": "3%",
     "increase": "+12%",
     "increaseRevenue": "+60%",
     "decreaseChurn": "-30%",
@@ -27,12 +27,12 @@
     "documentation": "Documentation"
   },
   "featureA": {
-    "title": "Dify SaaS Platform",
-    "description": "It offers the following features:",
+    "title": "Feature-rich SaaS Platform",
+    "description": "It offers the following features",
     "learnMore": "Learn more →",
     "benefit1": {
-      "title": "Simple Recharge",
-      "description": "Integrated with ZPay payment."
+      "title": "★ Simple Recharge",
+      "description": "👍 Integrated with ZPay payment."
     },
     "benefit2": {
       "title": "For C-End Users",
@@ -54,8 +54,8 @@
     "success": "Login successful! Redirecting..."
   },
   "subscribe": {
-    "title": "Get early access",
-    "description": "Be among the first to get access to supastarter.nuxt.",
+    "title": "Get Early Access",
+    "description": "Be among the first to access supastarter.nuxt",
     "placeholder": "Email",
     "button": "Subscribe"
   },
